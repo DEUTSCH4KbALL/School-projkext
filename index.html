@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Йододефіцит: Наслідки та Профілактика</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0e6c6fd.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --accent: #00bcd4;
+            --bg-gradient: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg-gradient);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+        }
+
+        nav {
+            text-align: center;
+            background: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007c91;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #0097a7;
+        }
+
+        .info {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info.visible {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            background: #f0f0f0;
+        }
+
+        .quiz {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz input {
+            margin: 10px 5px 20px 0;
+        }
+
+        #toTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            border: none;
+            font-size: 20px;
+            display: none;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .facts {
+            margin-top: 20px;
+        }
+
+        .fact {
+            background: white;
+            padding: 10px 15px;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .fact.visible {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header data-aos="fade-down">
+        <h1>Йододефіцит в організмі людини</h1>
+        <p>Дізнайся про наслідки, профілактику та як захистити здоров’я</p>
+    </header>
+
+    <nav>
+        <a href="#plan">План</a>
+        <a href="#what">Що таке</a>
+        <a href="#effects">Наслідки</a>
+        <a href="#prevention">Профілактика</a>
+        <a href="#quiz">Вікторина</a>
+        <a href="#facts">Факти</a>
+    </nav>
+
+    <section id="plan" data-aos="fade-up">
+        <h2 class="section-title">📚 План дослідження</h2>
+        <ul>
+            <li><strong>Тема:</strong> Йододефіцит та його профілактика</li>
+            <li><strong>Мета:</strong> Дослідити вплив нестачі йоду на організм людини</li>
+            <li><strong>Об'єкт:</strong> Йодовмісні речовини</li>
+            <li><strong>Предмет:</strong> Вплив йоду на здоров’я людини</li>
+            <li><strong>Завдання:</strong> Зібрати дані, проаналізувати симптоми, визначити методи профілактики</li>
+            <li><strong>Хід роботи:</strong> Вивчення джерел, збір інформації, аналіз наслідків</li>
+            <li><strong>Висновки:</strong> Йод є критично важливим, профілактика — ефективна та необхідна</li>
+        </ul>
+    </section>
+
+    <section id="what" data-aos="fade-up">
+        <h2 class="section-title">🔍 Що таке йододефіцит?</h2>
+        <p>Йод — це незамінний мікроелемент. Дефіцит викликає серйозні порушення в організмі.</p>
+        <button class="button info-button" data-target="info1">Детальніше</button>
+        <div id="info1" class="info">
+            <p>Йод входить до складу гормонів щитоподібної залози (T3 і T4), які регулюють метаболізм, ріст, розвиток
+                мозку.</p>
+        </div>
+    </section>
+
+    <section id="effects" data-aos="fade-up">
+        <h2 class="section-title">💥 Наслідки дефіциту йоду</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Проблеми з розумовим розвитком</h3>
+                <button class="button info-button" data-target="info2">Детальніше</button>
+                <div id="info2" class="info">
+                    <p>Може спричинити зниження інтелекту, пам'яті, труднощі з навчанням.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-baby"></i>
+                <h3>Порушення у дітей</h3>
+                <button class="button info-button" data-target="info3">Детальніше</button>
+                <div id="info3" class="info">
+                    <p>Йод важливий для правильного росту та розвитку дитини. Його брак — небезпечний.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Серцево-судинні ускладнення</h3>
+                <button class="button info-button" data-target="info4">Детальніше</button>
+                <div id="info4" class="info">
+                    <p>Порушення в гормональному фоні впливають на роботу серця, можуть викликати гіпотонію, аритмії.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevention" data-aos="fade-up">
+        <h2 class="section-title">🛡️ Профілактика</h2>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Йодована сіль</h3>
+                <button class="button info-button" data-target="info5">Детальніше</button>
+                <div id="info5" class="info">
+                    <p>Регулярне вживання йодованої солі — простий і ефективний спосіб профілактики.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-md"></i>
+                <h3>Медичне обстеження</h3>
+                <button class="button info-button" data-target="info6">Детальніше</button>
+                <div id="info6" class="info">
+                    <p>Щорічне обстеження у ендокринолога дозволяє вчасно виявити дефіцит.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" data-aos="fade-up">
+        <h2 class="section-title">🧠 Міні-вікторина</h2>
+        <div class="quiz">
+            <p>1. Який орган найбільше страждає від нестачі йоду?</p>
+            <input type="radio" name="q1" value="печінка"> Печінка<br>
+            <input type="radio" name="q1" value="щитоподібна"> Щитоподібна залоза<br>
+            <input type="radio" name="q1" value="легені"> Легені<br>
+            <button class="button" onclick="checkQuiz()">Перевірити</button>
+            <p id="quizResult"></p>
+        </div>
+    </section>
+
+    <section id="facts" data-aos="fade-up">
+        <h2 class="section-title">🌟 Цікаві факти</h2>
+        <button class="button" onclick="toggleFacts()">Показати/Приховати факти</button>
+        <div class="facts">
+            <div class="fact">Факт 1: У 80-х роках ХХ століття йододефіцит був однією з наймасовіших проблем здоров’я у
+                Європі.</div>
+            <div class="fact">Факт 2: Найбільше йоду — у морепродуктах і водоростях.</div>
+            <div class="fact">Факт 3: Вагітні жінки потребують на 50% більше йоду, ніж звичайна доросла людина.</div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Проєкт "Йододефіцит". Усі права захищено.
+    </footer>
+
+    <button id="toTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.querySelectorAll('.info-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const info = document.getElementById(btn.dataset.target);
+                info.classList.toggle('visible');
+            });
+        });
+
+        function checkQuiz() {
+            const correct = document.querySelector('input[name="q1"][value="щитоподібна"]');
+            const result = document.getElementById('quizResult');
+            if (correct.checked) {
+                result.textContent = "✅ Правильно!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "❌ Неправильно. Правильна відповідь: Щитоподібна залоза.";
+                result.style.color = "red";
+            }
+        }
+
+        function toggleFacts() {
+            document.querySelectorAll('.fact').forEach(fact => {
+                fact.classList.toggle('visible');
+            });
+        }
+
+        window.addEventListener("scroll", () => {
+            const btn = document.getElementById("toTop");
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+    </script>
+</body>
+
+</html>
